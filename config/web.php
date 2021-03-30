@@ -52,9 +52,6 @@ $config = [
             ],
         ],
         */
-        'view' => [
-            'class' => 'views\login.php',
-        ]
     ],
     'params' => $params,
 ];
