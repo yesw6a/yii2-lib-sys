@@ -40,15 +40,15 @@ php yii server --port=8888
 3. 修改 `username` 及 `password` 为你的数据库登录名和密码
 
 ## 数据字段表
-| 字段名 | 备注 |
-|---|---|
-| id | |
-| name | 书名 |
-| no | 图书编号 |
-| price | 图书价格 |
-| author | 作者 |  
-| cover | 封面 |
-| publisher | 出版社 |
-| category | 分类 |
-| create_at | 入库时间 |
-| update_at | 更新时间 |
+| 字段名 | 类型 | 长度 | not null | 主键 | 注释 | 
+|---|---|---|---|---|---|
+| id | int | 10 | true | true | ID（自增） |
+| name | varchar | 255 | true | false | 书名 |
+| isbn | varcahr | 13 | true | false | 图书编号 |
+| price | double | 10 | true | false | 图书价格 |
+| author | varchar | 100 | false | false |作者 |  
+| cover | varchar | 1000 | false | false |封面 |
+| publisher | varchar | 50 | false | false |出版社 |
+| category | varchar | 50 | true | false | 分类 |
+| create_at | timestamp | 0 | true | false |入库时间 |
+| update_at | timestamp | 0 | true | false |更新时间 |
