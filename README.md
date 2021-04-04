@@ -28,7 +28,7 @@ composer install
 php yii server --port=8888
 ```
 
-在浏览器中输入配置好的URL（以上面 Web Server为例就是 http://localhost:8888）就能看到项目的页面啦。
+在浏览器中输入配置好的URL（以上面 Web Server为例就是 `http://localhost:8888`）就能看到项目的页面啦。
 
 ## 配置数据库连接池
 1. 打开 lib_sys/config/db.php 文件
